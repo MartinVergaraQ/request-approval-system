@@ -1,0 +1,21 @@
+meta {
+  name: reject request
+  type: http
+}
+
+post {
+  url: {{baseUrl}}/api/requests/1/reject/
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "note": "Falta respaldo de cotización"
+  }
+}

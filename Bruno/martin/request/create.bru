@@ -1,0 +1,26 @@
+meta {
+  name: create request
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/requests/
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{accessToken}}
+}
+
+body:json {
+  {
+    "title": "Compra insumos",
+    "amount": 25000,
+    "description": "Mouse y teclado",
+    "approver": 2
+  }
+  
+}

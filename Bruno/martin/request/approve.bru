@@ -1,0 +1,14 @@
+meta {
+  name: approve request
+  type: http
+}
+
+post {
+  url: {{baseUrl}}/api/requests/1/approve/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{accessToken}}
+}

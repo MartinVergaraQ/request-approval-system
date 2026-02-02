@@ -1,0 +1,28 @@
+# Python / Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Virtualenv
+Backend/entorno/
+Backend/.venv/
+venv/
+.venv/
+
+# Env files (SECRETOS)
+.env
+Backend/.env
+frontend/.env
+*.env
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

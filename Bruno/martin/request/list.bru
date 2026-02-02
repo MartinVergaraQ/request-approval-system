@@ -1,0 +1,11 @@
+meta { name: list requests type: http }
+
+get {
+  url: {{baseUrl}}/api/requests/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{accessToken}}
+}

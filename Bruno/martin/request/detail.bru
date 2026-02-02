@@ -1,0 +1,14 @@
+meta {
+  name: request detail
+  type: http
+}
+
+get {
+  url: {{baseUrl}}/api/requests/1/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{accessToken}}
+}

@@ -1,0 +1,14 @@
+meta {
+  name: submit request
+  type: http
+}
+
+post {
+  url: {{baseUrl}}/api/requests/1/submit/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{accessToken}}
+}
